@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mainbody{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  line-height: 3;
+
+}
+.header-contact1{
+  grid-area: hd;
+  text-align: center;
+}
+.content-contact2{
+  grid-area: cn;
+  text-align: center;
+padding: 0 0 15vh 0;
+list-style: none;
+
+}
+.profile{
+  grid-area: img;
+  max-width: 90%;
+max-height: auto;
+}
+.about-section{
+  grid-area: ab;
+}
+.Artist-statement{
+ grid-area: as;
+  padding:15vh 0 15vh 0;
+}
+.CV-section{
+  grid-area: cv;
+
+}
+.info{
+  border-bottom-style: dotted;
+}
+.edu{
+border-bottom-style: dotted;
+}
+.awards{
+  border-bottom-style: dotted;
+  
+}
+.form-contact{
+  grid-area: fr;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  line-height: 2;
+}
+.gridcontact-container{
+   height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat (5, 1fr);
+  grid-template-areas: 
+  "hd hd hd hd hd"
+  "cn cn cn cn cn"
+  "img img img ab ab"
+  "as as as as as"
+  "cv cv cv cv cv"
+  "fr fr fr fr fr";
+  gap: 1rem;
+}
+.gridcontact-container{
+  display: grid;
+  padding: 11%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: var(--base-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--base-varient);
+}
