@@ -20,8 +20,8 @@
     --nav-gradient: #2f223578;
 }
 #theme-switch{
-  height: 50px;
-  width: 50px;
+  height: 4vw;
+  width: 4vw;
   padding: 0;
   border-radius: 50%;
   background-color: var(--text-color);
@@ -54,7 +54,7 @@ nav a {
 nav {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  padding: 10px 20px;
+  padding: 1vh 2vw;
   height: 10vw;
   background: var(--nav-base);
   position: fixed;
@@ -67,13 +67,20 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+.item svg{
+  display: flex;
+  width: 3vw;
+}
+.item h1{
+display: flex;
+}
 .item a {
   position: relative;
   user-select: none;
   font-size: 1.5vw;
   text-transform: uppercase;
   cursor: pointer;
-  margin: 0 20px;
+  margin: 0 2vw;
 }
 .item a:before {
   content: "";
